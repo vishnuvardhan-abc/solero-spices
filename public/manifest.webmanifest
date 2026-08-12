@@ -1,0 +1,23 @@
+{
+  "name": "SOLERO SPICES | HITECH SPICES PVT LTD",
+  "short_name": "SOLERO SPICES",
+  "description": "Premium Indian spices manufacturer & supplier — blended, whole and ground spices by HITECH SPICES PVT LTD.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fdf7ee",
+  "theme_color": "#7a0e12",
+  "icons": [
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
