@@ -48,13 +48,13 @@ function ProductDetailView({ product }: { product: Product }) {
 
   const currentFrontImage = useMemo(() => {
   // Turmeric Powder - 500g packet
-  if (product.slug === "chicken-masala" && size === "500g") {
-    return chicken500front;
-  }
+  // if (product.slug === "chicken-masala" && size === "500g") {
+  //   return chicken500front;
+  // }
 
-  if (product.slug === "garam-masala" && size === "500g") {
-  return chicken500front;
-}
+//   if (product.slug === "garam-masala" && size === "500g") {
+//   return chicken500front;
+// }
 
 if (product.slug === "coriander-powder" && size === "500g") {
   return ;
