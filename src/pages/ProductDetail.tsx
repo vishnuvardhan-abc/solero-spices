@@ -60,9 +60,9 @@ if (product.slug === "coriander-powder" && size === "500g") {
   return ;
 }
 
-if (product.slug === "mustard-powder" && size === "500g") {
-  return ;
-}
+// if (product.slug === "mustard-powder" && size === "500g") {
+//   return ;
+// }
 
   return product.frontImage;
 }, [product.slug, product.frontImage, size]);

@@ -14,7 +14,7 @@ export const site = {
   keywords:
     "SOLERO SPICES, HITECH SPICES PVT LTD, Solero Spices, Indian Spices, Spice Manufacturer, Spice Supplier, Blended Spices, Whole Spices, Ground Spices, Premium Masala, Hyderabad Spices",
   // WhatsApp number in international format, digits only (country code + number)
-  whatsapp: "919346559380",
+  whatsapp: "919704233311",
   phone: "040 4852 8671",
   email: "solerospices@gmail.com",
   addressLine: "D-86, Phase-1, Jeedimetla Industrial Area, Hyderabad, Telangana 500055, India",

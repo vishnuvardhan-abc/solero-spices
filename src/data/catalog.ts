@@ -26,7 +26,7 @@ export const wholeNames = [
 ];
 
 export const groundedNames = [
-  "Chilli Powder", "Turmeric Powder", "Coriander Powder", "Kashmiri Chilli Powder", "Mustard  Powder",
+  "Chilli Powder", "Turmeric Powder", "Coriander Powder", "Kashmiri Chilli Powder", "mustard powder"
 
 ];
 

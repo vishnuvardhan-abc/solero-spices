@@ -188,6 +188,6 @@ export const benefits = [
 // Placeholder HR details — easily editable later.
 export const hr = {
   email: "solerospices@gmail.com",
-  phone: "+91 9704233311",
+  phone: "+91 040 4852 8671",
   hours: "Mon – Sat: 9:30 AM – 6:00 PM",
 } as const;

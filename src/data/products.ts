@@ -49,6 +49,9 @@ import rasammasalaback from "@/assets/rasammasala-back.png";
 import pavbhajimasalafront from "@/assets/pavbhajimasala-front.png";
 import pavbhajimasalaback from "@/assets/pavbhajimasala-back.png";
 
+import sambarmasalafront from "@/assets/sambar-front.png";
+import sambarmasalaback from "@/assets/sambar-back.png";
+
 import panipurimasalafront from "@/assets/panipurimasala-front.png";
 import panipurimasalaback from "@/assets/panipurimasala-back.png";
 
@@ -162,8 +165,9 @@ import corianderpowderback from "@/assets/corianderpowder-back.png";
 import kashmirichillipowderfront from "@/assets/kashmiri-front.png";
 import kashmirichillipowderback from "@/assets/kashmiri-back.png";
 
-import mustardpowderfront from "@/assets/mustardpowder-front.png";
-import mustardpowderback from "@/assets/mustardpowder-back.png";
+
+import mustardpowderfront from "@/assets/mustardraipowder-front.png";
+import mustardpowderback from "@/assets/mustardraipowder-back.png";
 
 
 // import garammasalafront from "@/assets/garammasala-front.png";
@@ -481,11 +485,11 @@ const PRODUCT_IMAGES: Record<
     back: cholemasalaback,
   },
 
-  // "sambar-masala": {
-  //   main: sambarmasalafront,
-  //   front: sambarmasalafront,
-  //   back: sambarmasalaback,
-  // },
+  "sambar-masala": {
+    main: sambarmasalafront,
+    front: sambarmasalafront,
+    back: sambarmasalaback,
+  },
 
   "noodles-masala": {
     main: noodlesmasalafront,
@@ -732,7 +736,8 @@ const PRODUCT_IMAGES: Record<
   back: kashmirichillipowderback,
 },
 
-"Mustard-powder": {
+
+"mustard-powder": {
   main: mustardpowderfront,
   front: mustardpowderfront,
   back: mustardpowderback,
@@ -753,139 +758,401 @@ const PRODUCT_DETAILS: Record<
   }
 > = {
   "chicken-masala": {
-    sizes: ["50g", "100g", "500g"],
+    sizes: ["50g",  "500g"],
     prices: {
-      "50g": 40,
-      "100g": 75,
-      "500g": 140,
+      "50g": 21,
+      
+      "500g": 115,
     },
 
-      images: {
-    default: chickenmaslafront,
-    "500g": chickenmasalaback,
-  },
+  //     images: {
+  //   default: chickenmaslafront,
+  //   "500g": chickenmasalaback,
+  // },
   },
 
    "garam-masala": {
-    sizes: ["50g", "100g", "500g"],
-    prices: { "50g": 35, "100g": 70, "200g": 135 },
+    sizes: ["50g",  "500g"],
+    prices: { "50g": 25,  "500g": 138 },
 
-     images: {
-    default: chickenmaslafront,
-    "500g": chickenmasalaback,
-  },
+  //    images: {
+  //   default: chickenmaslafront,
+  //   "500g": chickenmasalaback,
+  // },
   },
 
   "meat-masala": {
-    sizes: ["50g", "100g", "200g"],
-    prices: { "50g": 45, "100g": 85, "200g": 160 },
+    sizes: ["50g", "500g"],
+    prices: { "50g": 26,  "500g": 160 },
   },
 
   "sabji-masala": {
-    sizes: ["50g", "100g", "200g"],
-    prices: { "50g": 30, "100g": 60, "200g": 120 },
+    sizes: ["50g",  "500g"],
+    prices: { "50g": 16,  "500g": 120 },
   },
 
   "chat-masala": {
     sizes: ["50g", "100g"],
-    prices: { "50g": 30, "100g": 55 },
+    prices: { "50g": 15, "100g": 30 },
   },
 
   "biryani-pulav-masala": {
-    sizes: ["50g", "100g", "200g"],
-    prices: { "50g": 45, "100g": 80, "200g": 155 },
+    sizes: ["50g"],
+    prices: { "50g": 28,  },
   },
 
   "fish-masala": {
-    sizes: ["50g", "100g"],
-    prices: { "50g": 45, "100g": 80 },
+    sizes: ["50g"],
+    prices: { "50g": 28 },
   },
 
   "chole-masala": {
     sizes: ["50g", "100g"],
-    prices: { "50g": 35, "100g": 65 },
+    prices: { "50g": 19, "100g": 36 },
   },
 
   "sambar-masala": {
-    sizes: ["50g", "100g", "200g"],
-    prices: { "50g": 35, "100g": 65, "200g": 120 },
+    sizes: ["50g", "100g"],
+    prices: { "50g": 16, "100g": 31 },
   },
 
   "noodles-masala": {
-    sizes: ["20g", "50g", "100g"],
-    prices: { "20g": 10, "50g": 25, "100g": 45 },
+    sizes: [ "50g" ],
+    prices: {  "50g": 31  },
   },
 
   "rasam-masala": {
-    sizes: ["50g", "100g"],
-    prices: { "50g": 30, "100g": 60 },
+    sizes: ["50g"],
+    prices: { "50g": 19 },
   },
 
   "pav-bhaji-masala": {
-    sizes: ["50g", "100g"],
-    prices: { "50g": 35, "100g": 65 },
+    sizes: ["50g"],
+    prices: { "50g": 23},
   },
 
   "pani-puri-masala": {
-    sizes: ["50g", "100g"],
-    prices: { "50g": 30, "100g": 55 },
+    sizes: ["50g"],
+    prices: { "50g": 13 },
   },
 
   "jal-jeera": {
-    sizes: ["50g", "100g"],
-    prices: { "50g": 25, "100g": 45 },
+    sizes: ["50g"],
+    prices: { "50g": 12 },
   },
 
-  // "kasuri-methi": {
-  //   sizes: ["25g", "50g", "100g"],
-  //   prices: { "25g": 25, "50g": 45, "100g": 80 },
-  // },
+  "kasuri-methi": {
+    sizes: [ "100g"],
+    prices: { "100g": 45 },
+  },
 
   "black-pepper-powder": {
-    sizes: ["50g", "100g"],
-    prices: { "50g": 75, "100g": 140 },
+    sizes: ["50g", ],
+    prices: { "50g": 60 },
   },
 
   "amchur-powder": {
-    sizes: ["50g", "100g"],
-    prices: { "50g": 45, "100g": 80 },
+    sizes: ["50g"],
+    prices: { "50g": 15  },
   },
 
   "cumin-powder": {
-    sizes: ["50g", "100g", "200g"],
-    prices: { "50g": 35, "100g": 70, "200g": 135 },
+    sizes: ["50g"],
+    prices: { "50g": 20 },
   },
 
   "methi-powder": {
-    sizes: ["50g", "100g"],
-    prices: { "50g": 30, "100g": 60 },
+    sizes: ["50g"],
+    prices: { "50g": 9 },
+
+
   },
+
+
+  // whole spices
+
+  "black-pepper": {
+  sizes: ["20g", "50g"],
+  prices: {
+    "20g": 20,
+    "50g": 50,
+   
+  },
+},
+
+"chilli-whole": {
+  sizes: [ "100g", "200g" ],
+  prices: {
+    
+    "100g": 32,
+    "200g": 64,
+    
+  },
+},
+
+"black-cardamom": {
+  sizes: ["20g", "50g"],
+  prices: {
+    "20g": 44,
+    "50g": 108,
+    
+  },
+},
+
+"clove": {
+  sizes: ["20g", "50g"],
+  prices: {
+    "20g": 24,
+    "50g": 59,
+    
+  },
+},
+
+"star-anise": {
+  sizes: ["20g", "50g"],
+  prices: {
+    "20g": 16,
+    "50g": 40,
+   
+  },
+},
+
+"nutmeg": {
+  sizes: ["20g", "50g"],
+  prices: {
+    "20g": 19,
+    "50g": 48,
+   
+  },
+},
+
+"mace": {
+  sizes: ["20g", "50g"],
+  prices: {
+    "20g": 52,
+    "50g": 130,
+    
+  },
+},
+
+"cinnamon": {
+  sizes: [ "50g", "100g"],
+  prices: {
+    
+    "50g": 20,
+    "100g": 39,
+    
+  },
+},
+
+"green-cardamom": {
+  sizes: ["20g", "50g"],
+  prices: {
+    "20g": 71,
+    "50g": 176,
+    
+  },
+},
+
+"shahjeera": {
+  sizes: ["20g", "50g"],
+  prices: {
+    "20g": 25,
+    "50g": 62,
+    
+  },
+},
+
+"poppy-seeds": {
+  sizes: ["20g", "50g"],
+  prices: {
+    "20g": 37,
+    "50g": 90,
+    
+  },
+},
+
+"ajwain": {
+  sizes: [ "50g", "100g", "200g", "500g"],
+  prices: {
+    
+    "50g": 13,
+    "100g": 25,
+    "200g": 48,
+    "500g": 120,
+  },
+},
+
+"barik-rai": {
+  sizes: [ "50g", "100g", "200g", "500g"],
+  prices: {
+    
+    "50g": 7,
+    "100g": 13,
+    "200g": 25,
+    "500g": 60,
+  },
+},
+
+"barik-saunf": {
+  sizes: [ "50g", "100g", "200g", "500g"],
+  prices: {
+    
+    "50g": 13,
+    "100g": 26,
+    "200g": 50,
+    "500g": 124,
+  },
+},
+
+"coriander-whole": {
+  sizes: [ "50g", "100g", "200g", "500g"],
+  prices: {
+    
+    "50g": 11,
+    "100g": 21,
+    "200g": 42,
+    "500g": 100,
+  },
+},
+
+"dry-ginger": {
+  sizes: [ "50g", "100g", "200g", "500g"],
+  prices: {
+    
+    "50g": 19,
+    "100g": 36,
+    "200g": 72,
+    "500g": 175,
+  },
+},
+
+"fenugreek": {
+  sizes: [ "50g", "100g", "200g", "500g"],
+  prices: {
+    
+    "50g": 7,
+    "100g": 13,
+    "200g": 24,
+    "500g": 58,
+  },
+},
+
+"white-til": {
+  sizes: [ "50g","100g", "200g", "500g"],
+  prices: {
+    
+    "50g": 10,
+    "100g": 19,
+    "200g": 37,
+    "500g": 92,
+  },
+},
+
+"yellow-mustard": {
+  sizes: [ "50g", "100g"],
+  prices: {
+    
+    "50g": 10,
+    "100g": 19,
+    
+  },
+},
+
+"copra-powder": {
+  sizes: [ "50g", "100g", "200g", "500g"],
+  prices: {
+    
+    "50g": 21,
+    "100g": 41,
+    "200g": 82,
+    "500g": 200,
+  },
+},
+
+"jeera": {
+  sizes: [ "50g", "100g", "200g", "500g"],
+  prices: {
+   
+    "50g": 17,
+    "100g": 33,
+    "200g": 66,
+    "500g": 160,
+  },
+},
+
+"kalonji": {
+  sizes: [ "50g", "100g", "200g", "500g"],
+  prices: {
+    
+    "50g": 18,
+    "100g": 36,
+    "200g": 70,
+    "500g": 170,
+  },
+},
+
+"black-til": {
+  sizes: [ "50g", "100g", "200g", "500g"],
+  prices: {
+    
+    "50g": 20,
+    "100g": 38,
+    "200g": 76,
+    "500g": 185,
+  },
+},
+
+"black-mustard": {
+  sizes: [ "50g", "100g", "200g", "500g"],
+  prices: {
+    
+    "50g": 7,
+    "100g": 12,
+    "200g": 24,
+    "500g": 60,
+  },
+},
+
+"moti-saunf": {
+  sizes: [ "50g", "100g", "200g", "500g"],
+  prices: {
+    
+    "50g": 12,
+    "100g": 23,
+    "200g": 44,
+    "500g": 150,
+  },
+},
 
   // grounded spices
 
   "chilli-powder": {
   sizes: ["50g", "100g", "200g","500g"],
-  prices: { "50g": 35, "100g": 70, "200g": 135 },
+  prices: { "50g": 18, "100g": 35, "200g": 70, "500g": 175 },
 },
 
 "turmeric-powder": {
   sizes: ["50g", "100g", "200g","500g"],
-  prices: { "50g": 30, "100g": 60, "200g": 115 },
+  prices: { "50g": 14, "100g": 28, "200g": 56, "500g": 140 },
 },
 
 "coriander-powder": {
-  sizes: ["50g", "100g", "200g","500g"],
-  prices: { "50g": 25, "100g": 50, "200g": 95 },
+  sizes: [ "100g", "200g","500g"],
+  prices: { "100g": 24, "200g": 48 , "500g": 120},
 },
 
 "kashmiri-chilli-powder": {
   sizes: [ "200g","500g"],
-  prices: { "50g": 45, "100g": 85, "200g": 165 },
+  prices: { "200g": 146, "500g": 365 },
 },
 
-"Mustard-powder": {
-  sizes: ["50g", "100g", "200g","500g"],
-  prices: { "50g": 45, "100g": 85, "200g": 165 },
+
+
+
+"mustard-powder": {
+  sizes: [ "200g","500g"],
+  prices: {  "200g": 28, "500g": 70 },
 },
 
 
