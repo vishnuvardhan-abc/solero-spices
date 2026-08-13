@@ -36,8 +36,8 @@ export default function Home() {
           "@type": "Organization",
           name: "HITECH SPICES PVT LTD",
           brand: "SOLERO SPICES",
-          url: "https://www.hitechspices.com/",
-          logo: "https://www.hitechspices.com/icon-512.png",
+          url: "https://www.solerospices.com/",
+          logo: "https://www.solerospices.com/icon-512.png",
         }}
       />
 

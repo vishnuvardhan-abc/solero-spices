@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.hitechspices.com/sitemap.xml
+Sitemap: https://www.solerospices.com/sitemap.xml

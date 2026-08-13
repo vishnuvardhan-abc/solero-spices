@@ -9,7 +9,7 @@ export const site = {
   tagline: "Real Taste Of Spices",
   // Public website URL used for canonical tags, sitemap & structured data.
   // 👉 Update this to your live domain after deployment.
-  url: "https://www.hitechspices.com",
+  url: "https://www.solerospices.com",
   // Default keywords used across pages for on-page SEO.
   keywords:
     "SOLERO SPICES, HITECH SPICES PVT LTD, Solero Spices, Indian Spices, Spice Manufacturer, Spice Supplier, Blended Spices, Whole Spices, Ground Spices, Premium Masala, Hyderabad Spices",
